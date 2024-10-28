@@ -1,5 +1,6 @@
 init: prompt
 	stow AstroNvim_config
+	stow yazi
 	sudo stow --target=/ Firefox
 
 prompt:
