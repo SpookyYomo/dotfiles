@@ -3,7 +3,7 @@
 	url = git@github.com:SpookyYomo/AstroNvim_config.git
 [submodule "Firefox/usr/lib/firefox"]
 	path = Firefox/usr/lib/firefox
-	url = ./Firefox/usr/lib/firefox
+	url = git@github.com:SpookyYomo/Firefox_config.git
 [submodule "Firefox_user"]
 	path = Firefox_user
 	url = git@github.com:SpookyYomo/Firefox_user.git
