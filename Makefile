@@ -7,8 +7,8 @@ init: prompt
 fish_fn:
 	# We create completions for functions by copying and sed
 	# See https://fishshell.com/docs/current/completions.html
-	sed 's/complete -c fd /complete -c ffd /' /usr/share/fish/vendor_completions.d/fd.fish > ffd.fish
-	sed 's/complete -c rg /complete -c frg /' /usr/share/fish/vendor_completions.d/rg.fish > frg.fish
+	sed 's/complete -c fd /complete -c ffd /' /usr/share/fish/vendor_completions.d/fd.fish > $(XDG_CONFIG_HOME)/fish/completions/ffd.fish
+	sed 's/complete -c rg /complete -c frg /' /usr/share/fish/vendor_completions.d/rg.fish > $(XDG_CONFIG_HOME)/fish/completions/frg.fish
 
 firefox_user:
 	# This populates from our user-written user.js into a user.js that is
