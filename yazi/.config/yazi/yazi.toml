@@ -1,2 +1,8 @@
 [manager]
+ratio = [1, 3, 4]
 show_hidden = true
+
+[plugin]
+append_previewers = [
+  { name = "*", run = "hexyl" },
+]
