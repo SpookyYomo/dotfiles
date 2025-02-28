@@ -3,6 +3,7 @@ init: prompt
 	stow yazi
 	sudo stow --target=/ Firefox
 	stow fish
+	stow starship
 
 fish_fn:
 	# We create completions for functions by copying and sed
