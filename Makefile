@@ -4,6 +4,7 @@ init: prompt
 	sudo stow --target=/ Firefox
 	stow fish
 	stow starship
+	systemd_user
 
 fish_fn:
 	# We create completions for functions by copying and sed
@@ -15,6 +16,11 @@ firefox_user:
 	# This populates from our user-written user.js into a user.js that is
 	# inherited across all profiles.
 	sudo sed 's/user_pref(/defaultPref(/' Firefox_user/user.js > /usr/lib/firefox/firefox.cfg
+
+systemd_user:
+	@echo -n "Overwrite systemd configs?" && read and && [ $${and:-N} = y ]
+	stow systemd
+	stow -D systemd
 
 prompt:
 	@echo -n "Stowing may be destructive if you do not know what you are doing! Continue? [y/N]" && read and && [ $${and:-N} = y ]
