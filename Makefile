@@ -15,7 +15,7 @@ fish_fn:
 firefox_user:
 	# This populates from our user-written user.js into a user.js that is
 	# inherited across all profiles.
-	sudo sed 's/user_pref(/defaultPref(/' Firefox_user/user.js > /usr/lib/firefox/firefox.cfg
+	sed 's/user_pref(/defaultPref(/' Firefox_user/user.js | sudo tee /usr/lib/firefox/firefox.cfg 1> /dev/null
 
 systemd_user:
 	@echo -n "Overwrite systemd configs?" && read and && [ $${and:-N} = y ]
