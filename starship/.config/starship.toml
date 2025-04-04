@@ -142,6 +142,9 @@ format = '$symbol [${ram}( | ${swap})]($style) '
 symbol = "🐏"
 threshold = 60
 
+[nim]
+symbol = " "
+
 [nix_shell]
 symbol = " "
 
@@ -157,7 +160,10 @@ Emscripten = " "
 EndeavourOS = " "
 Fedora = " "
 FreeBSD = " "
+Garuda = "﯑ "
 Gentoo = " "
+HardenedBSD = "ﲊ "
+Illumos = " "
 Linux = " "
 Macos = " "
 Manjaro = " "
@@ -166,15 +172,19 @@ MidnightBSD = " "
 Mint = " "
 NetBSD = " "
 NixOS = " "
+OpenBSD = " "
 openSUSE = " "
+OracleLinux = " "
 Pop = " "
 Raspbian = " "
 Redhat = " "
 RedHatEnterprise = " "
 Redox = " "
+Solus = "ﴱ "
 SUSE = " "
 Ubuntu = " "
 Unknown = " "
+Windows = " "
 
 [package]
 symbol = " "
