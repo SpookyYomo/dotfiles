@@ -107,3 +107,4 @@ end
 
 bind \ca 'nvims' execute
 bind \eg 'git status' execute
+bind \ey 'NVIM_APPNAME=nvim_config/AstroNvim yazi_wrap'
