@@ -1,0 +1,19 @@
+[core]
+  compression = 9
+
+[difftool "kommitdiff"]
+	cmd = kommitdiff \"$LOCAL\" \"$REMOTE\"
+
+[mergetool "kommitmerge"]
+	cmd = kommitmerge \"$BASE\" \"$LOCAL\" \"$REMOTE\" \"$MERGED\"
+	trustExitCode = true
+
+[init]
+	defaultBranch = main
+
+[interactive]
+	singlekey = true
+
+[rebase]
+	autoStash = true
+	missingCommitsCheck = warn

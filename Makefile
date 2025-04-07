@@ -4,6 +4,7 @@ init: prompt
 	sudo stow --target=/ Firefox
 	stow fish
 	stow starship
+	stow git
 	systemd_user
 
 fish_fn:
