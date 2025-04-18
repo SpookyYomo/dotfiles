@@ -4,3 +4,8 @@ Currently using the following plugins:
 
 https://github.com/yazi-rs/plugins/blob/main/git.yazi/README.md
 https://github.com/Reledia/hexyl.yazi
+
+```
+ya pack -a yazi-rs/plugins:git
+ya pack -a Reledia/hexyl
+```

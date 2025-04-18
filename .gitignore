@@ -1,1 +1,3 @@
 systemd/.config/systemd/user/ssh-add.service
+yazi/.config/yazi/plugins/*
+yazi/.config/yazi/package.toml

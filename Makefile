@@ -23,5 +23,11 @@ systemd_user:
 	stow systemd
 	stow -D systemd
 
+yazi:
+	echo "Updating/Initing yazi..."
+	ya pack -u
+	ya pack -a yazi-rs/plugins:git
+	ya pack -a Reledia/hexyl
+
 prompt:
 	@echo -n "Stowing may be destructive if you do not know what you are doing! Continue? [y/N]" && read and && [ $${and:-N} = y ]
