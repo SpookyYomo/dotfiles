@@ -49,3 +49,6 @@ set -gx TMPDIR "/dev/shm"
 # Python build
 set -gx PYTHON_CONFIGURE_OPTS "--enable-shared --enable-optimizations --with-lto"
 set -gx PYTHON_CFLAGS "-march=native -mtune=native"
+
+# Rust build
+set -gx RUSTFLAGS "-C target-cpu=native"
