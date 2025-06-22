@@ -1,18 +1,16 @@
-[manager]
+[mgr]
 ratio = [1, 3, 4]
 show_hidden = true
 
 [plugin]
-append_previewers = [
-  { name = "*", run = "hexyl" },
-]
+append_previewers = [{ name = "*", run = "hexyl" }]
 
 [[plugin.prepend_fetchers]]
-id   = "git"
+id = "git"
 name = "*"
-run  = "git"
+run = "git"
 
 [[plugin.prepend_fetchers]]
-id   = "git"
+id = "git"
 name = "*/"
-run  = "git"
+run = "git"
