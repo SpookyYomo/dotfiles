@@ -5,6 +5,7 @@ init: prompt
 	stow fish
 	stow starship
 	stow git
+	stow kitty
 	systemd_user
 
 fish_fn:
