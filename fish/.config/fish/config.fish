@@ -17,6 +17,7 @@ if status is-interactive
     alias icat='kitten icat'
     abbr --add kssh 'kitty +kitten ssh --kitten="askpass=native" --kitten="login_shell=fish"'
 
+    fzf --fish | source
     starship init fish | source
     # fish transient prompt for fish
     enable_transience
