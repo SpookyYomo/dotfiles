@@ -57,6 +57,6 @@ function nvim-astro
     env NVIM_APPNAME=nvim_config/AstroNvim nvim $argv
 end
 
-bind \ca 'nvims' execute
+bind \ca beginning-of-buffer 'nvims' execute
 bind \eg 'git status' execute
 bind \ey 'NVIM_APPNAME=nvim_config/AstroNvim yazi_wrap'

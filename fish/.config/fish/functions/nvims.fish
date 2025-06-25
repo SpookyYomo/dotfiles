@@ -3,12 +3,17 @@ function nvims
     set -l config (printf "%s\n" $items | fzf --prompt=" Neovim Config 󰄾 " --height=~50% --layout=reverse --border --exit-0)
     if [ -z $config ]
         echo "Nothing selected"
+        # early exit
         return 0
     else if [ $config = "default" ]
-        set -l config ""
-        env NVIM_APPNAME= nvim $argv
+        set -x NVIM_APPNAME
     else
-        # Add subfolder
-        env NVIM_APPNAME=nvim_config/$config nvim $argv
+        set -x NVIM_APPNAME "nvim_config/$config"
+    end
+
+    if test -z "$argv"
+        commandline -i "env NVIM_APPNAME=$NVIM_APPNAME nvim "
+    else
+        commandline -i "env NVIM_APPNAME=$NVIM_APPNAME nvim"
     end
 end
