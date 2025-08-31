@@ -52,3 +52,6 @@ set -gx PYTHON_CFLAGS "-march=native -mtune=native"
 
 # Rust build
 set -gx RUSTFLAGS "-C target-cpu=native"
+
+# Bashisms for FZF
+set -gx FZF_DEFAULT_OPTS "--with-shell='bash -c'"
