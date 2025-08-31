@@ -4,3 +4,6 @@
 [submodule "Firefox_user"]
 	path = Firefox_user
 	url = git@github.com:SpookyYomo/Firefox_user.git
+[submodule "fzf-git"]
+	path = fzf-git
+	url = https://github.com/junegunn/fzf-git.sh

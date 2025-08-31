@@ -1,0 +1,1 @@
+../../../../fzf-git/fzf-git.fish
