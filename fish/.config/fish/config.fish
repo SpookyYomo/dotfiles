@@ -21,6 +21,15 @@ if status is-interactive
     starship init fish | source
     # fish transient prompt for fish
     enable_transience
+
+    set -g fish_key_bindings fish_vi_key_bindings
+
+    bind -M insert \ca beginning-of-buffer 'nvims' execute
+    bind -M default \ca beginning-of-buffer 'nvims' execute
+    bind -M insert \eg 'git status' execute
+    bind -M default \eg 'git status' execute
+    bind -M insert \ey 'NVIM_APPNAME=nvim_config/AstroNvim yazi_wrap'
+    bind -M default \ey 'NVIM_APPNAME=nvim_config/AstroNvim yazi_wrap'
 end
 
 # stackoverflow.com/a/23233524 for fish syntax
@@ -57,6 +66,3 @@ function nvim-astro
     env NVIM_APPNAME=nvim_config/AstroNvim nvim $argv
 end
 
-bind \ca beginning-of-buffer 'nvims' execute
-bind \eg 'git status' execute
-bind \ey 'NVIM_APPNAME=nvim_config/AstroNvim yazi_wrap'
