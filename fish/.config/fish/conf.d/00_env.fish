@@ -52,3 +52,7 @@ set -gx PYTHON_CFLAGS "-march=native -mtune=native"
 
 # Rust build
 set -gx RUSTFLAGS "-C target-cpu=native"
+
+# Caching build output (Sccache)
+set -gx RUSTC_WRAPPER sccache
+set -gx SCCACHE_DIR "$XDG_CACHE_HOME"/sccache
