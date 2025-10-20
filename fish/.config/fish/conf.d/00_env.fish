@@ -26,6 +26,7 @@ set -gx WGETRC "$XDG_CONFIG_HOME"/wgetrc
 set -gx CUDA_CACHE_PATH "$XDG_CACHE_HOME"/nv
 set -gx PARALLEL_HOME "$XDG_CONFIG_HOME"/parallel
 # set -gx XAUTHORITY "$XDG_RUNTIME_DIR"/Xauthority
+set -gx PASSWORD_STORE_DIR "$XDG_DATA_HOME"/pass
 
 # pairing with XDG env-vars
 alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
