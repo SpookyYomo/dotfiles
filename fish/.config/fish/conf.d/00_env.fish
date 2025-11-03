@@ -25,6 +25,7 @@ set -gx MACHINE_STORAGE_PATH "$XDG_DATA_HOME"/docker-machine
 set -gx WGETRC "$XDG_CONFIG_HOME"/wgetrc
 set -gx CUDA_CACHE_PATH "$XDG_CACHE_HOME"/nv
 set -gx PARALLEL_HOME "$XDG_CONFIG_HOME"/parallel
+set -gx PASSWORD_STORE_DIR "$XDG_DATA_HOME"/pass
 # set -gx XAUTHORITY "$XDG_RUNTIME_DIR"/Xauthority
 set -gx PASSWORD_STORE_DIR "$XDG_DATA_HOME"/pass
 
