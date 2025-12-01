@@ -2,4 +2,4 @@ abbr -a -- kssh 'kitty +kitten ssh --kitten="askpass=native" --kitten="login_she
 abbr -a --position anywhere --command git -- lf 'log --graph --decorate --dense --pretty=fuller'
 abbr -a --position anywhere --command git -- oo --oneline
 abbr -a --position anywhere --command git -- aa --all
-abbr -a --position anywhere --command git -- rbc 'rebase --committer-date-is-author-date --update-refs --autostash --autosquash'
+abbr -a --position anywhere --command git -- rbc 'rebase --committer-date-is-author-date --update-refs --autostash --autosquash --rebase-merges'
