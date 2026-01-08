@@ -7,6 +7,7 @@ init: prompt
 	stow git
 	stow kitty
 	systemd_user
+	stow latexmk
 
 fish_fn:
 	# We create completions for functions by copying and sed
