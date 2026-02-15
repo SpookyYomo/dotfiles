@@ -34,6 +34,9 @@ alias wget='wget --hsts-file="$XDG_DATA_HOME/wget-hsts"'
 alias yarn='yarn --use-yarnrc $XDG_CONFIG_HOME/yarn/config'
 alias svn='svn --config-dir "$XDG_CONFIG_HOME"/subversion'
 
+# Keyboard Input (see https://fcitx-im.org/wiki/Using_Fcitx_5_on_Wayland#KDE_Plasma)
+set -gx XMODIFIERS "@im=fcitx"
+
 # SSH askpass preferences
 set -gx GIT_ASKPASS ksshaskpass
 set -gx SSH_ASKPASS ksshaskpass
