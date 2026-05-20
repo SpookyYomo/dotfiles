@@ -33,6 +33,7 @@ yazi_new:
 	echo "Installing yazi pkgs..."
 	ya pkg install yazi-rs/plugins:git
 	ya pkg install Reledia/hexyl
+	ya pkg add MasouShizuka/projects
 
 prompt:
 	@echo -n "Stowing may be destructive if you do not know what you are doing! Continue? [y/N]" && read and && [ $${and:-N} = y ]
