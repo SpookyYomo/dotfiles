@@ -32,3 +32,7 @@ desc = "Merge current tab to other projects"
 on = ["P", "M"]
 run = "plugin projects 'merge all'"
 desc = "Merge current project to other projects"
+
+[[mgr.prepend_keymap]]
+on = ["g", "r"]
+run = 'shell -- ya emit cd "$(git rev-parse --show-toplevel)"'
