@@ -34,6 +34,8 @@ yazi_new:
 	ya pkg install yazi-rs/plugins:git
 	ya pkg install Reledia/hexyl
 	ya pkg add MasouShizuka/projects
+	ya pkg add yazi-rs/flavors:catppuccin-latte
+	ya pkg add yazi-rs/flavors:catppuccin-macchiato
 
 prompt:
 	@echo -n "Stowing may be destructive if you do not know what you are doing! Continue? [y/N]" && read and && [ $${and:-N} = y ]

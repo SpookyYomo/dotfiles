@@ -3,3 +3,7 @@
 modified_sign = "M"
 deleted_sign = "D"
 # clean_sign = "✔"
+
+[flavour]
+light = "catpuccin-latte"
+dark = "catppuccin-macchiato"
