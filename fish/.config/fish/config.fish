@@ -39,9 +39,11 @@ if [ ( count $SSH_CONNECTION ) -le 0 ]
 end
 
 # pyenv
-pyenv init - | source
-pyenv init --path | source
-status --is-interactive; and pyenv virtualenv-init - | source
+if type -q pyenv
+    pyenv init - | source
+    pyenv init --path | source
+    status --is-interactive; and pyenv virtualenv-init - | source
+end
 
 # zoxide
 zoxide init fish | source
