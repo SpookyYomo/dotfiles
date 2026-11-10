@@ -4,7 +4,7 @@ if status is-interactive
     alias cp='cp -i'
     alias rm='rm -i --one-file-system'
     alias l='/usr/bin/ls --color=auto'
-    alias ls='exa -la --colour=always --group-directories-first --icons'
+    alias ls='exa -la --colour=always --group-directories-first --icons always'
 
     alias git='NVIM_APPNAME=nvim_config/AstroNvim /usr/bin/git'
     alias rg='rg --hyperlink-format=kitty'
