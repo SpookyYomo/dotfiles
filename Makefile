@@ -31,11 +31,12 @@ yazi:
 
 yazi_new:
 	echo "Installing yazi pkgs..."
-	ya pkg install yazi-rs/plugins:git
-	ya pkg install Reledia/hexyl
+	ya pkg add yazi-rs/plugins:git
+	ya pkg add Reledia/hexyl
 	ya pkg add MasouShizuka/projects
 	ya pkg add yazi-rs/flavors:catppuccin-latte
 	ya pkg add yazi-rs/flavors:catppuccin-macchiato
+	ya pkg install
 
 prompt:
 	@echo -n "Stowing may be destructive if you do not know what you are doing! Continue? [y/N]" && read and && [ $${and:-N} = y ]
